@@ -6,11 +6,11 @@ import java.util.concurrent.ThreadLocalRandom;
 import java.lang.Math;
 
 public class Student {
-    // Constants
     static final int modulesPerYear = 6;
     static final int totalYears = 3;
 
-    // Class attributes
+    static int currentId = 0;
+
     private final int id;
     private final String forename;
     private final String surname;
@@ -27,8 +27,8 @@ public class Student {
      * @param degreeTitle - The title of the degree being studied
      * @param year - The current year of study
      */
-    public Student(int id, String forename, String surname, String degreeTitle, int year) {
-        this.id = id;
+    public Student(String forename, String surname, String degreeTitle, int year) {
+        this.id = currentId++;
         this.forename = forename;
         this.surname = surname;
         this.degreeTitle = degreeTitle;

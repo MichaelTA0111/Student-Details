@@ -2,9 +2,9 @@ import student.Student;
 
 public class Main {
     // Initialise all student objects
-    static Student student1 = new Student(1, "Andrew", "Jackson","Electrical & Electronic Engineering", 1);
-    static Student student2 = new Student(2, "Ben", "Kraken", "Software & Electronic Systems Engineering", 2);
-    static Student student3 = new Student(3, "Chris", "Lightning", "Computer Science", 3);
+    static Student student1 = new Student("Andrew", "Jackson","Electrical & Electronic Engineering", 1);
+    static Student student2 = new Student("Ben", "Kraken", "Software & Electronic Systems Engineering", 2);
+    static Student student3 = new Student("Chris", "Lightning", "Computer Science", 3);
 
     public static void main(String[] args) {
         // Print all student details
